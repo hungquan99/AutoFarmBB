@@ -1,7 +1,7 @@
 local player = game.Players.LocalPlayer
 
 local isExcluded = false
-for _, username in ipairs(excludedUsernames) do
+for _, username in ipairs(RobloxUsername) do
    if player and player.Name == username then
        isExcluded = true
        break
