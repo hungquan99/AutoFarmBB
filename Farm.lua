@@ -1,4 +1,3 @@
-
 local player = game.Players.LocalPlayer
 
 local isExcluded = false
@@ -48,5 +47,4 @@ else
     warn("Folder to monitor not found | Hung Hub")
 end
 wait(2)
-end
 end
