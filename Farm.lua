@@ -19,7 +19,7 @@ local function runLuaCode()
        loadstring(luaCodeToRun)()
    end)
    if not success then
-       warn("Error running Lua code: " .. errorMsg)
+       warn("Error running Lua code: " .. errorMsg "| Hung Hub")
    end
 end
 
@@ -45,7 +45,7 @@ while true do
 if folderToMonitor and folderToMonitor:IsA("Folder") then
   folderToMonitor.ChildAdded:Connect(onChildAdded)
 else
-    warn("Folder to monitor not found.")
+    warn("Folder to monitor not found | Hung Hub")
 end
 wait(2)
 end
